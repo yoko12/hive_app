@@ -1,0 +1,11 @@
+<h1>新しいユーザーの追加</h1>
+<%= form_for(@user) do |f| %>
+<p>名前</p>
+<%= f.text_field :name %>
+<p>メールアドレス</p>
+<%= f.text_field :email %>
+<p>プロフィール</p>
+<%= f.text_area :profile %>
+<p><%= f.submit "登録" %></p>
+<% end %>
+
